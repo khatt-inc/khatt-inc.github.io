@@ -6,8 +6,8 @@
   <title>Wasel (وصل) — offline mesh messenger | Khatt</title>
   <meta name="description" content="Wasel is a peer-to-peer messenger for Android that works without internet. Phones pass encrypted notes to each other over Bluetooth. No accounts, no servers.">
   <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data:; font-src 'self'; style-src 'self'; script-src 'self'; base-uri 'none'; form-action 'none'">
-  <meta name="theme-color" content="#fdfbf7" media="(prefers-color-scheme: light)">
-  <meta name="theme-color" content="#0f0e17" media="(prefers-color-scheme: dark)">
+  <meta name="theme-color" content="#f5f0e4" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#110e09" media="(prefers-color-scheme: dark)">
   <link rel="canonical" href="https://khatt-inc.github.io/wasel/">
   <link rel="icon" href="/assets/img/favicon.svg" type="image/svg+xml">
   <link rel="icon" href="/assets/img/favicon.png" type="image/png" sizes="48x48">
@@ -18,178 +18,181 @@
   <meta property="og:url" content="https://khatt-inc.github.io/wasel/">
   <meta property="og:image" content="https://khatt-inc.github.io/assets/img/wasel-feature.webp">
   <meta name="twitter:card" content="summary_large_image">
+  <link rel="preload" href="/assets/fonts/Fraunces.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/assets/fonts/ArefRuqaa-Bold.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="/assets/fonts/Figtree.ttf" as="font" type="font/ttf" crossorigin>
-  <link rel="stylesheet" href="/assets/css/style.css">
+  <link rel="stylesheet" href="/assets/css/style.css?v=7">
   <script src="/assets/js/theme.js"></script>
 </head>
-<body>
+<body data-product="wasel">
   <a class="skip" href="#main">Skip to content</a>
 
   <header class="nav">
-    <div class="wrap">
-      <a class="brand" href="/" aria-label="Khatt home">
-        <img src="/assets/img/favicon.svg" alt="" width="34" height="34">
-        khatt <small lang="ar" dir="rtl">خط</small>
-      </a>
+    <div class="nav-in">
+      <a class="brand" href="/" aria-label="Khatt home"><img class="brand-logo" src="/assets/img/khatt-logo.png" alt="" width="34" height="34"><span class="brand-word">Khatt <span class="ar" lang="ar" dir="rtl">خط</span></span></a>
       <nav class="links" id="links" aria-label="Main">
-        <a href="/#products">Products</a>
-        <a href="/wasel/" aria-current="page">Wasel</a>
-        <a href="/wasel/privacy/">Privacy</a>
-        <a href="/#contact">Contact</a>
+        <a href="/wasel/" aria-current="page">Wasel</a><a href="/rasid/">Rasid</a><a href="/ed-ai/">ED-AI</a>
+        <a href="/#principles">Principles</a>
+        <a href="/#contact" class="m-only">Say hello</a>
       </nav>
-      <div>
-        <button class="icon-btn" id="theme" type="button" aria-label="Switch theme">🌙</button>
-        <button class="icon-btn menu-btn" id="menu" type="button" aria-label="Menu" aria-expanded="false" aria-controls="links">☰</button>
+      <div class="nav-right">
+        <a class="nav-cta" href="/#contact">Say hello</a>
+        <button class="icon-btn" id="theme" type="button" aria-label="Switch theme"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="8"/><path d="M12 4v16" /><path d="M12 4a8 8 0 0 1 0 16z" fill="currentColor"/></svg></button>
+        <button class="icon-btn menu-btn" id="menu" type="button" aria-label="Menu" aria-expanded="false" aria-controls="links"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path class="m1" d="M4 9h16"/><path class="m2" d="M4 15h16"/></svg></button>
       </div>
     </div>
   </header>
 
   <main id="main">
-    <section class="hero">
-      <div class="blobs" aria-hidden="true">
-        <span class="blob a"></span><span class="blob b"></span><span class="blob c"></span>
-      </div>
+    <section class="p-hero">
+      <svg class="fig p-fig" viewBox="0 0 480 320" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path class="draw" pathLength="1" d="M60 230 L170 120 L300 200 L400 80"/><path class="draw d2" pathLength="1" d="M300 200 L430 250"/><circle class="nd" cx="60" cy="230" r="10"/><circle class="nd" cx="170" cy="120" r="10"/><circle class="nd" cx="300" cy="200" r="10"/><circle class="nd" cx="400" cy="80" r="10"/><circle class="nd" cx="430" cy="250" r="10"/><circle class="ring" cx="60" cy="230" r="10"/><circle class="ring" cx="300" cy="200" r="10"/><circle class="ring" cx="400" cy="80" r="10"/></svg>
       <div class="wrap">
         <div>
-          <span class="eyebrow reveal">Offline mesh messenger</span>
-          <h1 class="reveal d1">Wasel <span class="grad-text" lang="ar" dir="rtl">وصل</span></h1>
-          <p class="lead reveal d2">Talk to people nearby with no signal at all. Your phone chats straight to other phones over Bluetooth, and nearby phones pass your notes along, so they reach friends way beyond your range.</p>
-          <div class="hero-cta reveal d3">
-            <a class="btn btn-primary" href="#how">See how it works <span aria-hidden="true">↓</span></a>
-            <a class="btn btn-ghost" href="#get" >Get the app</a>
+          <img class="logo-mark" src="/assets/img/wasel-icon.png" alt="Wasel app icon" width="72" height="72">
+          <span class="kicker">Offline mesh messenger</span>
+          <h1>Wasel <span class="ar" lang="ar" dir="rtl">وصل</span></h1>
+          <p class="lead">Talk to people nearby with no signal at all. Your phone chats straight to other phones over Bluetooth, and nearby phones pass your notes along, so they reach friends way beyond your range.</p>
+          <ul class="tags">
+            <li>No signal needed</li>
+            <li>End-to-end encrypted</li>
+            <li>No account</li>
+            <li>Android 8.0+</li>
+          </ul>
+          <div class="btn-row">
+            <a class="btn btn-solid" href="#how">See how it works <span aria-hidden="true">↓</span></a>
+            <a class="btn btn-line" href="#get">Get the app</a>
           </div>
         </div>
-        <div class="stage reveal d2">
-          <img class="pigeon" src="/assets/img/pigeon.svg" alt="" width="190" height="150">
-          <span class="chip one"><span class="dot"></span> No signal needed</span>
-          <span class="chip two">🔐 End-to-end encrypted</span>
-          <div class="phone" data-tilt>
-            <img src="/assets/img/shot-01_welcome.webp" width="640" height="1385" alt="Wasel welcome screen: stay close, even when the internet isn't">
-          </div>
+        <div class="p-media">
+          <div class="phone"><img src="/assets/img/shot-01_welcome.webp" width="295" height="640" alt="Wasel welcome screen: stay close, even when the internet isn't"></div>
+          <div class="phone"><img src="/assets/img/shot-02_chats.webp" width="295" height="640" alt="Wasel chats list with nearby friends"></div>
         </div>
       </div>
     </section>
 
-    <section id="how">
+    <div class="trail">
+      <div class="spine" aria-hidden="true"><svg viewBox="0 0 2 1000" preserveAspectRatio="none" width="100%" height="100%" fill="none" stroke-width="2"><path class="spine-track" d="M1 0V1000" vector-effect="non-scaling-stroke"/><path class="spine-fill" d="M1 0V1000" pathLength="1" vector-effect="non-scaling-stroke" stroke-dasharray="1" stroke-dashoffset="1"/></svg><span class="pen"></span></div>
+
+
+    <section class="sec" id="how">
       <div class="wrap">
-        <div class="section-head">
-          <span class="eyebrow reveal">How it works</span>
-          <h2 class="reveal d1">Phones become the network.</h2>
+        <span class="node" aria-hidden="true"></span>
+        <div class="sec-head">
+          <span class="kicker reveal">How it works</span>
+          <h2 class="reveal d1">Phones become <em>the network.</em></h2>
           <p class="reveal d2">No towers, no servers, no accounts.</p>
         </div>
-        <div class="steps">
-          <div class="step reveal">
-            <h3>Find people near you</h3>
-            <p>Wasel finds other Wasel phones over Bluetooth Low Energy. Add a friend in person by scanning their QR code, which also protects you from impostors.</p>
-          </div>
-          <div class="step reveal d1">
-            <h3>Send a note</h3>
-            <p>Write a message or hold to record a voice note. It's sealed with end-to-end encryption on your phone before it leaves.</p>
-          </div>
-          <div class="step reveal d2">
-            <h3>Phones pass it on</h3>
-            <p>Nearby phones carry sealed envelopes onward without being able to read them, until they reach the right person.</p>
+        <div class="split top">
+          <ol class="steps reveal">
+            <li><div><h3>Find people near you</h3><p>Wasel finds other Wasel phones over Bluetooth Low Energy. Add a friend in person by scanning their QR code, which also protects you from impostors.</p></div></li>
+            <li><div><h3>Send a note</h3><p>Write a message or hold to record a voice note. It's sealed with end-to-end encryption on your phone before it leaves.</p></div></li>
+            <li><div><h3>Phones pass it on</h3><p>Nearby phones carry sealed envelopes onward without being able to read them, until they reach the right person.</p></div></li>
+          </ol>
+          <div class="media reveal d1">
+            <div class="phone"><img src="/assets/img/shot-05_safe_radar.webp" width="295" height="640" alt="Safe check-in radar" loading="lazy"></div>
+            <div class="phone"><img src="/assets/img/shot-03_chat_detail.webp" width="295" height="640" alt="A conversation" loading="lazy"></div>
           </div>
         </div>
       </div>
     </section>
 
-    <section>
+    <section class="sec alt">
       <div class="wrap">
-        <div class="section-head">
-          <span class="eyebrow reveal">Features</span>
-          <h2 class="reveal d1">Small app, big toolbox.</h2>
+        <span class="node" aria-hidden="true"></span>
+        <div class="sec-head">
+          <span class="kicker reveal">Features</span>
+          <h2 class="reveal d1">Small app, <em>big toolbox.</em></h2>
         </div>
-        <div class="bento">
-          <div class="card wide reveal">
-            <div class="ico v" aria-hidden="true">💬</div>
-            <h3>Messages &amp; voice notes</h3>
-            <p>Private chats with friends, plus a nearby feed for everyone around you. Voice notes are encrypted and go only to the person you send them to.</p>
+        <div class="feature-grid">
+          <div class="feature wide reveal"><span class="num">01</span><h3>Messages &amp; voice notes</h3><p>Private chats with friends, plus a nearby feed for everyone around you. Voice notes are encrypted and go only to the person you send them to.</p></div>
+          <div class="feature reveal d1"><span class="num">02</span><h3>End-to-end encryption</h3><p>Direct messages are encrypted on your phone and can only be read by the person they are for. Relaying phones can't read, change, or identify what they carry.</p></div>
+          <div class="feature reveal"><span class="num">03</span><h3>"I'm safe" check-in</h3><p>Let trusted contacts and neighbours nearby know you're okay with one tap.</p></div>
+          <div class="feature reveal d1"><span class="num">04</span><h3>Stealth mode</h3><p>Receive messages without showing your device to others. Rotating identifiers make tracking harder.</p></div>
+          <div class="feature reveal d2"><span class="num">05</span><h3>Fresh start</h3><p>One hold-to-confirm action wipes keys, chats and contacts from your phone.</p></div>
+          <div class="feature wide reveal"><span class="num">06</span><h3>Area channels (optional)</h3><p>Turn on the internet relay to chat with everyone in a map cell. It's off by default, and it's public: area posts, your nickname and the cell you join are visible to everyone in that area, and relay operators can see your IP address.</p></div>
+          <div class="feature reveal d1"><span class="num">07</span><h3>Carrier Pigeon game</h3><p>A built-in pigeon adventure with 16 worlds and local multiplayer races, because waiting for signal shouldn't be boring. Available in 20 languages, including Arabic with full right-to-left layout.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="sec">
+      <div class="wrap">
+        <span class="node" aria-hidden="true"></span>
+        <div class="split">
+          <div class="reveal">
+            <span class="kicker">Screenshots</span>
+            <h2>A friendly place <em>to talk.</em></h2>
+            <p>Light or dark, in your language. Chats, nearby friends, the safe check-in radar and the Carrier Pigeon game, all running with no signal.</p>
           </div>
-          <div class="card wide reveal d1">
-            <div class="ico t" aria-hidden="true">🛡️</div>
-            <h3>Noise protocol encryption</h3>
-            <p>Direct messages use the Noise Protocol Framework with Curve25519, ChaCha20-Poly1305 and BLAKE3. Relaying phones can't read, change, or identify what they carry.</p>
-          </div>
-          <div class="card reveal">
-            <div class="ico o" aria-hidden="true">✅</div>
-            <h3>"I'm safe" check-in</h3>
-            <p>Let trusted contacts and neighbours nearby know you're okay with one tap.</p>
-          </div>
-          <div class="card reveal d1">
-            <div class="ico p" aria-hidden="true">🕶️</div>
-            <h3>Stealth mode</h3>
-            <p>Receive messages without showing your device to others. Rotating identifiers make tracking harder.</p>
-          </div>
-          <div class="card reveal d2">
-            <div class="ico v" aria-hidden="true">🧽</div>
-            <h3>Fresh start</h3>
-            <p>One hold-to-confirm action wipes keys, chats and contacts from your phone.</p>
-          </div>
-          <div class="card wide reveal">
-            <div class="ico o" aria-hidden="true">🌍</div>
-            <h3>Area channels (optional)</h3>
-            <p>Turn on the internet relay to chat with everyone in a map cell. It's off by default, and it's public: area posts, your nickname and the cell you join are visible to everyone in that area, and relay operators can see your IP address.</p>
-          </div>
-          <div class="card wide reveal d1">
-            <div class="ico p" aria-hidden="true">🕊️</div>
-            <h3>Carrier Pigeon game</h3>
-            <p>A built-in pigeon adventure with 16 worlds and local multiplayer races, because waiting for signal shouldn't be boring. Available in 20 languages, including Arabic with full right-to-left layout.</p>
+          <div class="media reveal d1">
+            <div class="phone"><img src="/assets/img/shot-04_pigeon_game.webp" width="295" height="640" alt="Carrier Pigeon game" loading="lazy"></div>
+            <div class="phone"><img src="/assets/img/shot-07_dark_mode.webp" width="295" height="640" alt="Wasel in dark mode" loading="lazy"></div>
           </div>
         </div>
       </div>
     </section>
 
-    <section>
+    <section class="sec alt" id="get">
       <div class="wrap">
-        <div class="section-head">
-          <span class="eyebrow reveal">Screenshots</span>
-          <h2 class="reveal d1">A friendly place to talk.</h2>
-        </div>
-      </div>
-      <div class="rail reveal" role="list" aria-label="Wasel screenshots">
-        <div class="phone" role="listitem"><img src="/assets/img/shot-02_chats.webp" width="640" height="1385" alt="Chats list with nearby friends" loading="lazy"></div>
-        <div class="phone" role="listitem"><img src="/assets/img/shot-03_chat_detail.webp" width="640" height="1385" alt="A conversation" loading="lazy"></div>
-        <div class="phone" role="listitem"><img src="/assets/img/shot-05_safe_radar.webp" width="640" height="1385" alt="Safe check-in radar" loading="lazy"></div>
-        <div class="phone" role="listitem"><img src="/assets/img/shot-04_pigeon_game.webp" width="640" height="1385" alt="Carrier Pigeon game" loading="lazy"></div>
-        <div class="phone" role="listitem"><img src="/assets/img/shot-06_settings.webp" width="640" height="1385" alt="Settings" loading="lazy"></div>
-        <div class="phone" role="listitem"><img src="/assets/img/shot-07_dark_mode.webp" width="640" height="1385" alt="Dark mode" loading="lazy"></div>
-      </div>
-    </section>
-
-    <section id="get">
-      <div class="wrap">
-        <div class="section-head">
-          <span class="eyebrow reveal">Get Wasel</span>
-          <h2 class="reveal d1">Coming to Google Play.</h2>
+        <span class="node" aria-hidden="true"></span>
+        <div class="sec-head">
+          <span class="kicker reveal">Get Wasel</span>
+          <h2 class="reveal d1">Coming to <em>Google Play.</em></h2>
           <p class="reveal d2">Wasel is for Android 8.0+ and for people aged 16 and over. The Play Store listing is being prepared; the button below will go live when it is published.</p>
         </div>
-        <div class="hero-cta reveal">
-          <a class="btn btn-primary" href="#get" aria-disabled="true" tabindex="-1">Google Play: coming soon</a>
-          <a class="btn btn-ghost" href="/wasel/privacy/">Privacy policy</a>
+        <div class="btn-row reveal">
+          <a class="btn btn-solid" href="#get" aria-disabled="true" tabindex="-1">Google Play: coming soon</a>
+          <a class="btn btn-line" href="/wasel/privacy/">Privacy policy</a>
+          <a class="btn btn-line" href="/wasel/child-safety/">Child safety</a>
         </div>
         <div class="notice reveal">
-          <span aria-hidden="true">⚠️</span>
-          <div>
-            <strong>Not a substitute for emergency services.</strong>
-            <p>Wasel depends on nearby phones and can't promise delivery. In an emergency, contact your local emergency number.</p>
-          </div>
+          <strong>Not a substitute for emergency services.</strong> Wasel depends on nearby phones and can't promise delivery. In an emergency, contact your local emergency number.
         </div>
       </div>
     </section>
+
+      <div class="seal" aria-hidden="true" lang="ar">خط</div>
+    </div>
   </main>
 
-  <footer>
+  <footer class="foot">
     <div class="wrap">
-      <span>© <span id="year">2026</span> Khatt. All rights reserved.</span>
-      <nav aria-label="Footer">
-        <a href="/">Khatt</a>
-        <a href="/wasel/privacy/">Privacy policy</a>
-        <a href="mailto:privacy@khatt.app">Contact</a>
-      </nav>
+      <p class="foot-ar" lang="ar" dir="rtl" aria-hidden="true">خط</p>
+      <div class="foot-cols">
+        <div>
+          <h4>Solutions</h4>
+          <nav aria-label="Solutions">
+            <a href="/wasel/">Wasel · وصل</a>
+            <a href="/rasid/">Rasid · رصيد</a>
+            <a href="/ed-ai/">Khatt ED-AI</a>
+          </nav>
+        </div>
+        <div>
+          <h4>Privacy &amp; safety</h4>
+          <nav aria-label="Privacy">
+            <a href="/wasel/privacy/">Wasel privacy</a>
+            <a href="/wasel/child-safety/">Wasel child safety</a>
+            <a href="/rasid/privacy/">Rasid privacy</a>
+            <a href="/ed-ai/privacy/">ED-AI privacy</a>
+          </nav>
+        </div>
+        <div>
+          <h4>Company</h4>
+          <nav aria-label="Company">
+            <a href="/#principles">Principles</a>
+            
+            <a href="mailto:contact@khatt.app">contact@khatt.app</a>
+            <a href="mailto:privacy@khatt.app">privacy@khatt.app</a>
+          </nav>
+        </div>
+      </div>
+      <div class="foot-bottom">
+        <span>© <span id="year">2026</span> Khatt Inc. All rights reserved.</span>
+        <span>No trackers. No third-party requests.</span>
+      </div>
     </div>
   </footer>
 
-  <script src="/assets/js/main.js" defer></script>
+  <script src="/assets/js/main.js?v=6" defer></script>
 </body>
 </html>

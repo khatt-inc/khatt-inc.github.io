@@ -3,170 +3,249 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Khatt — tools that connect people, even offline</title>
-  <meta name="description" content="Khatt builds privacy-first apps that keep people connected when the internet isn't there. Home of Wasel, the offline mesh messenger.">
+  <title>Khatt — Software crafted for real life | شركة خط للبرمجيات</title>
+  <meta name="description" content="Khatt is a Cairo software studio building honest, privacy-first products: Wasel offline mesh messenger, Rasid private ledger for Egypt, and Khatt ED-AI grounded learning workspace.">
   <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data:; font-src 'self'; style-src 'self'; script-src 'self'; base-uri 'none'; form-action 'none'">
-  <meta name="theme-color" content="#fdfbf7" media="(prefers-color-scheme: light)">
-  <meta name="theme-color" content="#0f0e17" media="(prefers-color-scheme: dark)">
+  <meta name="theme-color" content="#f5f0e4" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#110e09" media="(prefers-color-scheme: dark)">
   <link rel="canonical" href="https://khatt-inc.github.io/">
   <link rel="icon" href="/assets/img/favicon.svg" type="image/svg+xml">
   <link rel="icon" href="/assets/img/favicon.png" type="image/png" sizes="48x48">
   <link rel="apple-touch-icon" href="/assets/img/apple-touch-icon.png">
   <meta property="og:type" content="website">
-  <meta property="og:title" content="Khatt — tools that connect people, even offline">
-  <meta property="og:description" content="Privacy-first apps that work when the internet doesn't. Meet Wasel.">
+  <meta property="og:title" content="Khatt — Software crafted for real life | شركة خط للبرمجيات">
+  <meta property="og:description" content="Offline mesh messaging, private personal finance for Egypt, and grounded AI education. No trackers, no surveillance.">
   <meta property="og:url" content="https://khatt-inc.github.io/">
-  <meta property="og:image" content="https://khatt-inc.github.io/assets/img/wasel-feature.webp">
-  <meta name="twitter:card" content="summary_large_image">
+  <meta property="og:image" content="https://khatt-inc.github.io/assets/img/khatt-logo.png">
+  <meta name="twitter:card" content="summary">
+  <link rel="preload" href="/assets/fonts/Fraunces.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/assets/fonts/ArefRuqaa-Bold.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="/assets/fonts/Figtree.ttf" as="font" type="font/ttf" crossorigin>
-  <link rel="stylesheet" href="/assets/css/style.css">
+  <link rel="stylesheet" href="/assets/css/style.css?v=7">
   <script src="/assets/js/theme.js"></script>
 </head>
 <body>
   <a class="skip" href="#main">Skip to content</a>
 
   <header class="nav">
-    <div class="wrap">
-      <a class="brand" href="/" aria-label="Khatt home">
-        <img src="/assets/img/favicon.svg" alt="" width="34" height="34">
-        khatt <small lang="ar" dir="rtl">خط</small>
-      </a>
+    <div class="nav-in">
+      <a class="brand" href="/" aria-label="Khatt home"><img class="brand-logo" src="/assets/img/khatt-logo.png" alt="" width="34" height="34"><span class="brand-word">Khatt <span class="ar" lang="ar" dir="rtl">خط</span></span></a>
       <nav class="links" id="links" aria-label="Main">
-        <a href="/#products">Products</a>
+        <a href="/wasel/">Wasel</a><a href="/rasid/">Rasid</a><a href="/ed-ai/">ED-AI</a>
         <a href="/#principles">Principles</a>
-        <a href="/#contact">Contact</a>
-        <a href="/wasel/privacy/">Privacy</a>
+        <a href="/#contact" class="m-only">Say hello</a>
       </nav>
-      <div>
-        <button class="icon-btn" id="theme" type="button" aria-label="Switch theme">🌙</button>
-        <button class="icon-btn menu-btn" id="menu" type="button" aria-label="Menu" aria-expanded="false" aria-controls="links">☰</button>
+      <div class="nav-right">
+        <a class="nav-cta" href="/#contact">Say hello</a>
+        <button class="icon-btn" id="theme" type="button" aria-label="Switch theme"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="8"/><path d="M12 4v16" /><path d="M12 4a8 8 0 0 1 0 16z" fill="currentColor"/></svg></button>
+        <button class="icon-btn menu-btn" id="menu" type="button" aria-label="Menu" aria-expanded="false" aria-controls="links"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path class="m1" d="M4 9h16"/><path class="m2" d="M4 15h16"/></svg></button>
       </div>
     </div>
   </header>
 
   <main id="main">
-    <!-- Hero -->
+    <!-- Hero: the line begins -->
     <section class="hero">
-      <div class="blobs" aria-hidden="true">
-        <span class="blob a"></span><span class="blob b"></span><span class="blob c"></span>
-      </div>
       <div class="wrap">
-        <div>
-          <span class="eyebrow reveal">Khatt · خط</span>
-          <h1 class="reveal d1">Stay close,<br><span class="grad-text">even when the internet isn't.</span></h1>
-          <p class="lead reveal d2">We make small, honest apps that connect people directly: no accounts to create, no tracking to opt out of, and nothing that breaks when the signal does.</p>
-          <div class="hero-cta reveal d3">
-            <a class="btn btn-primary" href="/wasel/">Meet Wasel <span aria-hidden="true">→</span></a>
-            <a class="btn btn-ghost" href="/wasel/privacy/">Read the privacy policy</a>
-          </div>
+        <div class="hero-copy">
+          <h1>Software with a <em>straight line</em> to the people it serves.</h1>
+          <ol class="routes" aria-label="Choose a Khatt product">
+            <li><a href="/wasel/"><span class="r-n">01</span><span class="r-name">Wasel <span class="ar" lang="ar" dir="rtl">وصل</span></span><span class="r-d">Talk with no signal</span><span class="r-go" aria-hidden="true">→</span></a></li>
+            <li><a href="/rasid/"><span class="r-n">02</span><span class="r-name">Rasid <span class="ar" lang="ar" dir="rtl">رصيد</span></span><span class="r-d">Track money, privately</span><span class="r-go" aria-hidden="true">→</span></a></li>
+            <li><a href="/ed-ai/"><span class="r-n">03</span><span class="r-name">ED-AI <span class="ar" lang="ar" dir="rtl">خط للتعليم الذكي</span></span><span class="r-d">Study from your lessons</span><span class="r-go" aria-hidden="true">→</span></a></li>
+          </ol>
         </div>
-
-        <div class="stage reveal d2">
-          <img class="pigeon" src="/assets/img/pigeon.svg" alt="" width="190" height="150">
-          <img class="pigeon small" src="/assets/img/pigeon.svg" alt="" width="96" height="76">
-          <span class="chip one"><span class="dot"></span> No signal needed</span>
-          <span class="chip two">🔐 End-to-end encrypted</span>
-          <div class="phone" data-tilt>
-            <img src="/assets/img/shot-02_chats.webp" width="640" height="1385" alt="Wasel app showing nearby friends and chats">
-          </div>
-        </div>
+        <p class="hero-ar" lang="ar" dir="rtl" aria-hidden="true">خط</p>
       </div>
+      <svg class="swash" viewBox="0 0 1100 160" preserveAspectRatio="none" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" aria-hidden="true" focusable="false"><path class="draw" pathLength="1" vector-effect="non-scaling-stroke" d="M1100 70 C800 20 500 120 260 80 S0 60 0 160"/></svg>
     </section>
 
-    <!-- Marquee -->
-    <div class="marquee" aria-hidden="true">
-      <div class="track">
-        <span>Offline-first</span><span>No accounts</span><span>End-to-end encrypted</span><span>No trackers</span><span>Built in the open about privacy</span><span>Made for real life</span>
-        <span>Offline-first</span><span>No accounts</span><span>End-to-end encrypted</span><span>No trackers</span><span>Built in the open about privacy</span><span>Made for real life</span>
-      </div>
-    </div>
+    <div class="trail">
+      <div class="spine" aria-hidden="true"><svg viewBox="0 0 2 1000" preserveAspectRatio="none" width="100%" height="100%" fill="none" stroke-width="2"><path class="spine-track" d="M1 0V1000" vector-effect="non-scaling-stroke"/><path class="spine-fill" d="M1 0V1000" pathLength="1" vector-effect="non-scaling-stroke" stroke-dasharray="1" stroke-dashoffset="1"/></svg><span class="pen"></span></div>
 
-    <!-- Products -->
-    <section id="products">
-      <div class="wrap">
-        <div class="section-head">
-          <span class="eyebrow reveal">What we make</span>
-          <h2 class="reveal d1">Our first flight.</h2>
-          <p class="reveal d2">One app so far, built carefully. More are on the way.</p>
+      <!-- Statement -->
+      <section class="sec">
+        <div class="wrap">
+          <span class="node" aria-hidden="true"></span>
+          <p class="statement reveal">Good software solves problems.<br>Great software respects people.<br><em>We do both.</em></p>
+          <div class="rails reveal">
+            <p class="rails-label">built around the rails Egypt actually uses</p>
+            <span>CIB</span><span>NBE</span><span>Banque Misr</span><span>QNB</span><span>Vodafone Cash</span><span>InstaPay</span><span>Fawry</span>
+          </div>
         </div>
+      </section>
 
-        <article class="spot reveal">
-          <img class="pigeon" src="/assets/img/pigeon.svg" alt="" width="120" height="95">
-          <div>
-            <h2>Wasel <span class="ar" lang="ar" dir="rtl">وصل</span></h2>
-            <p>An offline mesh messenger. Phones talk to each other over Bluetooth and pass notes along, so messages reach friends far beyond one phone's range. No towers, no servers, no accounts.</p>
-            <ul class="tags">
-              <li>Works offline</li>
-              <li>Noise end-to-end encryption</li>
-              <li>Android</li>
-              <li>Ages 16+</li>
-            </ul>
-            <a class="btn btn-ghost" href="/wasel/">Explore Wasel <span aria-hidden="true">→</span></a>
+      <!-- Products -->
+      <section class="sec" id="products">
+        <div class="wrap">
+          <span class="node" aria-hidden="true"></span>
+          <div class="sec-head">
+            <span class="kicker reveal">featured products</span>
+            <h2 class="reveal d1">Three products. <em>One standard.</em></h2>
+            <p class="reveal d2">Each one starts from the same question: what does this need from the cloud, and can we do without it?</p>
           </div>
-          <div class="shots" aria-hidden="true">
-            <div class="phone l"><img src="/assets/img/shot-05_safe_radar.webp" width="640" height="1385" alt="" loading="lazy"></div>
-            <div class="phone r"><img src="/assets/img/shot-03_chat_detail.webp" width="640" height="1385" alt="" loading="lazy"></div>
-          </div>
-        </article>
 
-        <div class="soon reveal">
-          <span aria-hidden="true">🛫</span>
-          <div>
-            <h3>Next flight: in the hangar</h3>
-            <p>More tools for staying connected are being built. Check back soon.</p>
-          </div>
+          <article class="station" id="wasel" data-product="wasel">
+            <svg class="fig st-fig" viewBox="0 0 480 320" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path class="draw" pathLength="1" d="M60 230 L170 120 L300 200 L400 80"/><path class="draw d2" pathLength="1" d="M300 200 L430 250"/><circle class="nd" cx="60" cy="230" r="10"/><circle class="nd" cx="170" cy="120" r="10"/><circle class="nd" cx="300" cy="200" r="10"/><circle class="nd" cx="400" cy="80" r="10"/><circle class="nd" cx="430" cy="250" r="10"/><circle class="ring" cx="60" cy="230" r="10"/><circle class="ring" cx="300" cy="200" r="10"/><circle class="ring" cx="400" cy="80" r="10"/></svg>
+            <div class="st-copy">
+              <ul class="chips"><li>Offline mesh</li><li>Android</li><li>Google Play review</li></ul>
+              <h3>Wasel <span class="ar" lang="ar" dir="rtl">وصل</span></h3>
+              <p>A peer-to-peer messenger for when the network is gone. Phones talk over Bluetooth Low Energy and relay encrypted messages hop by hop. No internet, no towers, no servers, no accounts.</p>
+              <div class="work-actions">
+                <a class="btn btn-solid st-link" href="/wasel/">View product →</a>
+                <a class="st-sub" href="/wasel/privacy/">Privacy policy</a>
+              </div>
+            </div>
+            <div class="st-media">
+              <div class="phone"><img src="/assets/img/shot-05_safe_radar.webp" width="295" height="640" alt="Wasel radar showing nearby phones in the mesh" loading="lazy"></div>
+              <div class="phone"><img src="/assets/img/shot-03_chat_detail.webp" width="295" height="640" alt="Wasel end-to-end encrypted chat" loading="lazy"></div>
+            </div>
+          </article>
+
+          <article class="station" id="rasid" data-product="rasid">
+            <svg class="fig st-fig" viewBox="0 0 480 320" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path class="draw" pathLength="1" d="M20 160 H460"/><path class="draw d1" pathLength="1" d="M90 160 V105 M165 160 V65 M270 160 V125 M370 160 V95"/><path class="draw d2" pathLength="1" d="M120 160 V205 M215 160 V255 M315 160 V195 M420 160 V225"/><path class="draw d3" pathLength="1" d="M240 160 L225 190 H255 Z"/><circle class="nd" cx="460" cy="160" r="10"/></svg>
+            <div class="st-copy">
+              <ul class="chips"><li>Personal finance</li><li>Android</li><li>Direct APK</li></ul>
+              <h3>Rasid <span class="ar" lang="ar" dir="rtl">رصيد</span></h3>
+              <p>All your money in one calm place. Cash, banks and wallets in a single ledger, with Egyptian bank and wallet SMS parsed on the phone and discarded once you review them. Nothing is uploaded, ever.</p>
+              <div class="work-actions">
+                <a class="btn btn-solid st-link" href="/rasid/">View &amp; download →</a>
+                <a class="st-sub" href="/rasid/privacy/">Privacy policy</a>
+              </div>
+            </div>
+            <div class="st-media">
+              <div class="phone"><img src="/assets/img/rasid/app-accounts.webp" width="570" height="1131" alt="Rasid accounts screen listing cash, CIB, Vodafone Cash and InstaPay balances" loading="lazy"></div>
+              <div class="phone"><img src="/assets/img/rasid/app-quick-add.webp" width="570" height="1131" alt="Rasid quick add sheet with category chips and number pad" loading="lazy"></div>
+            </div>
+          </article>
+
+          <article class="station" id="edai" data-product="edai">
+            <svg class="fig st-fig" viewBox="0 0 480 320" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path class="draw" pathLength="1" d="M20 70 H460 M20 130 H460 M20 190 H460 M20 250 H460"/><path class="draw d1" pathLength="1" d="M70 30 V290"/><path class="draw d2" pathLength="1" d="M100 120 C130 90 150 150 180 118 S230 100 255 124"/><path class="draw d3" pathLength="1" d="M100 140 C180 150 260 150 330 138"/><path class="draw d3" pathLength="1" d="M360 118 l16 16 l34 -40"/></svg>
+            <div class="st-copy">
+              <ul class="chips"><li>AI-native EdTech</li><li>Web</li><li>Pilot</li></ul>
+              <h3>ED-AI <span class="ar" lang="ar" dir="rtl">خط للتعليم الذكي</span></h3>
+              <p>One workspace for teachers, students and parents. Turn lesson files into draft quizzes you review and approve, give students a study companion that cites the teacher's own material, and record fees paid by Vodafone Cash, InstaPay, Fawry or cash.</p>
+              <div class="work-actions">
+                <a class="btn btn-solid st-link" href="/ed-ai/">View product →</a>
+                <a class="st-sub" href="/ed-ai/privacy/">Privacy policy</a>
+              </div>
+            </div>
+            <div class="st-media">
+              <div class="browser-frame">
+                <div class="browser-bar"><div class="browser-dots"><span class="dot-r"></span><span class="dot-y"></span><span class="dot-g"></span></div><div class="browser-url">edai.khatt.app/dashboard/teacher</div></div>
+                <div class="browser-content"><img src="/assets/img/ed-ai/teacher-command-center.webp" width="1024" height="640" alt="Khatt ED-AI teacher command center" loading="lazy"></div>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+    <!-- Matrix -->
+    <section class="sec alt" id="matrix">
+      <div class="wrap">
+        <span class="node" aria-hidden="true"></span>
+        <div class="sec-head">
+          <span class="kicker reveal">side by side</span>
+          <h2 class="reveal d1">Different missions, <em>same discipline.</em></h2>
+        </div>
+        <div class="matrix-wrap reveal d1">
+          <table class="matrix-table">
+            <thead>
+              <tr>
+                <th scope="col" class="col-feature">Dimension</th>
+                <th scope="col">Wasel <small>Offline mesh</small></th>
+                <th scope="col">Rasid <small>Personal ledger</small></th>
+                <th scope="col">ED-AI <small>Smart EdTech</small></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td class="col-feature">Role</td><td>Peer-to-peer messaging and local relays without internet.</td><td>Personal expense ledger with bank SMS ingestion.</td><td>Curriculum assistant for teachers, students and parents.</td></tr>
+              <tr><td class="col-feature">Platform</td><td>Android app</td><td>Android app</td><td>Web app</td></tr>
+              <tr><td class="col-feature">Connectivity</td><td><strong>100% offline</strong> · BLE mesh</td><td><strong>100% on-device</strong> · zero network</td><td><strong>Cloud</strong> · tenant-isolated</td></tr>
+              <tr><td class="col-feature">Privacy model</td><td>End-to-end encrypted messages, no accounts</td><td>Encrypted on-device ledger, no account</td><td>Teacher-approved content, cited answers, separate workspaces</td></tr>
+              <tr><td class="col-feature">Audience</td><td>Off-grid communities, travellers, events</td><td>Individuals and families in Egypt</td><td>Egyptian teachers, tutors, schools, parents</td></tr>
+              <tr><td class="col-feature">Integrations</td><td>Bluetooth LE, Carrier Pigeon minigame</td><td>CIB, NBE, Banque Misr, QNB, Vodafone Cash, InstaPay</td><td>Vodafone Cash, InstaPay, Fawry payment records</td></tr>
+              <tr><td class="col-feature">Access</td><td><a href="/wasel/">Google Play (in review)</a></td><td><a href="/rasid/">Direct APK</a></td><td><a href="/ed-ai/">Pilot access</a></td></tr>
+            </tbody>
+          </table>
         </div>
       </div>
     </section>
 
     <!-- Principles -->
-    <section id="principles">
+    <section class="sec" id="principles">
       <div class="wrap">
-        <div class="section-head">
-          <span class="eyebrow reveal">How we build</span>
-          <h2 class="reveal d1">Three promises we can keep.</h2>
+        <span class="node" aria-hidden="true"></span>
+        <div class="sec-head">
+          <span class="kicker reveal">how we build</span>
+          <h2 class="reveal d1">Three promises we keep <em>in code.</em></h2>
+          <p class="reveal d2">Architecture decisions, not slogans. Each one is something you can check.</p>
         </div>
-        <div class="grid-3">
-          <div class="card reveal">
-            <div class="ico o" aria-hidden="true">📡</div>
-            <h3>Works when it matters</h3>
-            <p>Core features run phone to phone, with no connection to a service that can go down. The internet is an optional extra, never a requirement.</p>
-          </div>
-          <div class="card reveal d1">
-            <div class="ico p" aria-hidden="true">🔒</div>
-            <h3>Private by design</h3>
-            <p>No accounts, no analytics or advertising libraries, and no server of ours that holds your messages. What stays on your phone stays on your phone.</p>
-          </div>
-          <div class="card reveal d2">
-            <div class="ico t" aria-hidden="true">🤝</div>
-            <h3>Honest about limits</h3>
-            <p>If a feature shares anything with a third party, we say so in plain words inside the app and in the policy. No "military-grade" hand-waving.</p>
-          </div>
+        <div class="rows">
+          <div class="row reveal"><span class="n">01</span><h3>Works where it matters</h3><p>Core features run device to device and on device. The internet is an enhancement, never a single point of failure.</p></div>
+          <div class="row reveal"><span class="n">02</span><h3>Private by design</h3><p>No tracker SDKs, no ad networks, no quiet data warehouse. What belongs on your phone stays on your phone.</p></div>
+          <div class="row reveal"><span class="n">03</span><h3>Honest about limits</h3><p>We publish what our products do and what they cannot do, in plain words. No inflated claims.</p></div>
         </div>
       </div>
     </section>
 
-    <!-- Contact -->
-    <section class="contact" id="contact">
-      <div class="wrap">
-        <span class="eyebrow reveal">Say hello</span>
-        <h2 class="reveal d1">Questions, ideas, privacy requests?</h2>
-        <a class="mail grad-text reveal d2" href="mailto:privacy@khatt.app">privacy@khatt.app</a>
-      </div>
-    </section>
+      <!-- Contact -->
+      <section class="sec contact" id="contact">
+        <div class="wrap">
+          <span class="node" aria-hidden="true"></span>
+          <span class="kicker reveal">get in touch</span>
+          <h2 class="reveal d1">Let's <em>talk.</em></h2>
+          <p class="reveal d2">We welcome school pilots for ED-AI, mesh networking collaborations, privacy requests and security reports.</p>
+          <div class="mail-list reveal d2">
+            <a class="mail" href="mailto:contact@khatt.app">contact@khatt.app</a>
+            <a class="mail" href="mailto:pilot@khatt.app">pilot@khatt.app</a>
+            <a class="mail" href="mailto:privacy@khatt.app">privacy@khatt.app</a>
+          </div>
+        </div>
+      </section>
+
+      <div class="seal" aria-hidden="true" lang="ar">خط</div>
+    </div>
   </main>
 
-  <footer>
+  <footer class="foot">
     <div class="wrap">
-      <span>© <span id="year">2026</span> Khatt. All rights reserved.</span>
-      <nav aria-label="Footer">
-        <a href="/wasel/">Wasel</a>
-        <a href="/wasel/privacy/">Privacy policy</a>
-        <a href="mailto:privacy@khatt.app">Contact</a>
-      </nav>
+      <p class="foot-ar" lang="ar" dir="rtl" aria-hidden="true">خط</p>
+      <div class="foot-cols">
+        <div>
+          <h4>Solutions</h4>
+          <nav aria-label="Solutions">
+            <a href="/wasel/">Wasel · وصل</a>
+            <a href="/rasid/">Rasid · رصيد</a>
+            <a href="/ed-ai/">Khatt ED-AI</a>
+          </nav>
+        </div>
+        <div>
+          <h4>Privacy &amp; safety</h4>
+          <nav aria-label="Privacy">
+            <a href="/wasel/privacy/">Wasel privacy</a>
+            <a href="/wasel/child-safety/">Wasel child safety</a>
+            <a href="/rasid/privacy/">Rasid privacy</a>
+            <a href="/ed-ai/privacy/">ED-AI privacy</a>
+          </nav>
+        </div>
+        <div>
+          <h4>Company</h4>
+          <nav aria-label="Company">
+            <a href="/#principles">Principles</a>
+            
+            <a href="mailto:contact@khatt.app">contact@khatt.app</a>
+            <a href="mailto:privacy@khatt.app">privacy@khatt.app</a>
+          </nav>
+        </div>
+      </div>
+      <div class="foot-bottom">
+        <span>© <span id="year">2026</span> Khatt Inc. All rights reserved.</span>
+        <span>No trackers. No third-party requests.</span>
+      </div>
     </div>
   </footer>
 
-  <script src="/assets/js/main.js" defer></script>
+  <script src="/assets/js/main.js?v=6" defer></script>
 </body>
 </html>

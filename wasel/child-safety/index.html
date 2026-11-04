@@ -6,34 +6,33 @@
   <title>Wasel Child Safety Standards | Khatt</title>
   <meta name="description" content="Wasel: Offline Mesh Chat (khatt.app.wasel) standards against child sexual abuse and exploitation (CSAE): prohibited content, in-app reporting, and how to contact Khatt.">
   <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data:; font-src 'self'; style-src 'self'; script-src 'self'; base-uri 'none'; form-action 'none'">
-  <meta name="theme-color" content="#fdfbf7" media="(prefers-color-scheme: light)">
-  <meta name="theme-color" content="#0f0e17" media="(prefers-color-scheme: dark)">
+  <meta name="theme-color" content="#f5f0e4" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#110e09" media="(prefers-color-scheme: dark)">
   <link rel="canonical" href="https://khatt-inc.github.io/wasel/child-safety/">
   <link rel="icon" href="/assets/img/favicon.svg" type="image/svg+xml">
   <link rel="icon" href="/assets/img/favicon.png" type="image/png" sizes="48x48">
   <link rel="apple-touch-icon" href="/assets/img/apple-touch-icon.png">
+  <link rel="preload" href="/assets/fonts/Fraunces.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/assets/fonts/ArefRuqaa-Bold.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="/assets/fonts/Figtree.ttf" as="font" type="font/ttf" crossorigin>
-  <link rel="stylesheet" href="/assets/css/style.css">
+  <link rel="stylesheet" href="/assets/css/style.css?v=7">
   <script src="/assets/js/theme.js"></script>
 </head>
-<body>
+<body data-product="wasel">
   <a class="skip" href="#main">Skip to content</a>
 
   <header class="nav">
-    <div class="wrap">
-      <a class="brand" href="/" aria-label="Khatt home">
-        <img src="/assets/img/favicon.svg" alt="" width="34" height="34">
-        khatt <small lang="ar" dir="rtl">خط</small>
-      </a>
+    <div class="nav-in">
+      <a class="brand" href="/" aria-label="Khatt home"><img class="brand-logo" src="/assets/img/khatt-logo.png" alt="" width="34" height="34"><span class="brand-word">Khatt <span class="ar" lang="ar" dir="rtl">خط</span></span></a>
       <nav class="links" id="links" aria-label="Main">
-        <a href="/#products">Products</a>
-        <a href="/wasel/">Wasel</a>
-        <a href="/wasel/privacy/">Privacy</a>
-        <a href="/#contact">Contact</a>
+        <a href="/wasel/" aria-current="page">Wasel</a><a href="/rasid/">Rasid</a><a href="/ed-ai/">ED-AI</a>
+        <a href="/#principles">Principles</a>
+        <a href="/#contact" class="m-only">Say hello</a>
       </nav>
-      <div>
-        <button class="icon-btn" id="theme" type="button" aria-label="Switch theme">🌙</button>
-        <button class="icon-btn menu-btn" id="menu" type="button" aria-label="Menu" aria-expanded="false" aria-controls="links">☰</button>
+      <div class="nav-right">
+        <a class="nav-cta" href="/#contact">Say hello</a>
+        <button class="icon-btn" id="theme" type="button" aria-label="Switch theme"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="8"/><path d="M12 4v16" /><path d="M12 4a8 8 0 0 1 0 16z" fill="currentColor"/></svg></button>
+        <button class="icon-btn menu-btn" id="menu" type="button" aria-label="Menu" aria-expanded="false" aria-controls="links"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path class="m1" d="M4 9h16"/><path class="m2" d="M4 15h16"/></svg></button>
       </div>
     </div>
   </header>
@@ -42,7 +41,7 @@
     <div class="wrap">
       <div class="legal-hero">
         <span class="eyebrow">Child safety</span>
-        <h1>Wasel <span class="grad-text">child safety standards</span></h1>
+        <h1>Wasel <span class="mark">child safety standards</span></h1>
         <p>Application: Wasel: Offline Mesh Chat (<code>khatt.app.wasel</code>) · Developer: Khatt · Minimum age: 16 and over<br>Effective date: <strong>November 4, 2026</strong></p>
       </div>
 
@@ -110,17 +109,44 @@
     </div>
   </main>
 
-  <footer>
+  <footer class="foot">
     <div class="wrap">
-      <span>© <span id="year">2026</span> Khatt. All rights reserved.</span>
-      <nav aria-label="Footer">
-        <a href="/">Khatt</a>
-        <a href="/wasel/">Wasel</a>
-        <a href="mailto:khatt.inc@gmail.com">Contact</a>
-      </nav>
+      <p class="foot-ar" lang="ar" dir="rtl" aria-hidden="true">خط</p>
+      <div class="foot-cols">
+        <div>
+          <h4>Solutions</h4>
+          <nav aria-label="Solutions">
+            <a href="/wasel/">Wasel · وصل</a>
+            <a href="/rasid/">Rasid · رصيد</a>
+            <a href="/ed-ai/">Khatt ED-AI</a>
+          </nav>
+        </div>
+        <div>
+          <h4>Privacy &amp; safety</h4>
+          <nav aria-label="Privacy">
+            <a href="/wasel/privacy/">Wasel privacy</a>
+            <a href="/wasel/child-safety/">Wasel child safety</a>
+            <a href="/rasid/privacy/">Rasid privacy</a>
+            <a href="/ed-ai/privacy/">ED-AI privacy</a>
+          </nav>
+        </div>
+        <div>
+          <h4>Company</h4>
+          <nav aria-label="Company">
+            <a href="/#principles">Principles</a>
+            
+            <a href="mailto:contact@khatt.app">contact@khatt.app</a>
+            <a href="mailto:privacy@khatt.app">privacy@khatt.app</a>
+          </nav>
+        </div>
+      </div>
+      <div class="foot-bottom">
+        <span>© <span id="year">2026</span> Khatt Inc. All rights reserved.</span>
+        <span>No trackers. No third-party requests.</span>
+      </div>
     </div>
   </footer>
 
-  <script src="/assets/js/main.js" defer></script>
+  <script src="/assets/js/main.js?v=6" defer></script>
 </body>
 </html>
