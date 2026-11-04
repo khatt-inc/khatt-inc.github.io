@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Wasel Privacy Policy | Khatt</title>
+  <meta name="description" content="Privacy policy for Wasel: Offline Mesh Chat (khatt.app.wasel) by Khatt. What stays on your phone, what optional features share, and your choices.">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data:; font-src 'self'; style-src 'self'; script-src 'self'; base-uri 'none'; form-action 'none'">
+  <meta name="theme-color" content="#fdfbf7" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#0f0e17" media="(prefers-color-scheme: dark)">
+  <link rel="canonical" href="https://khatt-inc.github.io/wasel/privacy/">
+  <link rel="icon" href="/assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="/assets/img/favicon.png" type="image/png" sizes="48x48">
+  <link rel="apple-touch-icon" href="/assets/img/apple-touch-icon.png">
+  <link rel="preload" href="/assets/fonts/Figtree.ttf" as="font" type="font/ttf" crossorigin>
+  <link rel="stylesheet" href="/assets/css/style.css">
+  <script src="/assets/js/theme.js"></script>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header class="nav">
+    <div class="wrap">
+      <a class="brand" href="/" aria-label="Khatt home">
+        <img src="/assets/img/favicon.svg" alt="" width="34" height="34">
+        khatt <small lang="ar" dir="rtl">خط</small>
+      </a>
+      <nav class="links" id="links" aria-label="Main">
+        <a href="/#products">Products</a>
+        <a href="/wasel/">Wasel</a>
+        <a href="/wasel/privacy/" aria-current="page">Privacy</a>
+        <a href="/#contact">Contact</a>
+      </nav>
+      <div>
+        <button class="icon-btn" id="theme" type="button" aria-label="Switch theme">🌙</button>
+        <button class="icon-btn menu-btn" id="menu" type="button" aria-label="Menu" aria-expanded="false" aria-controls="links">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <div class="wrap">
+      <div class="legal-hero">
+        <span class="eyebrow">Privacy policy</span>
+        <h1>Wasel <span class="grad-text">privacy policy</span></h1>
+        <p>Application: Wasel: Offline Mesh Chat (<code>khatt.app.wasel</code>) · Developer: Khatt · Minimum age: 16 and over<br>Effective date: <strong>November 4, 2026</strong></p>
+      </div>
+
+      <div class="legal">
+        <aside class="toc" aria-label="On this page">
+          <strong>On this page</strong>
+          <ol>
+            <li><a href="#s1">1. Summary</a></li>
+            <li><a href="#s2">2. Data on your device</a></li>
+            <li><a href="#s3">3. Bluetooth mesh &amp; encryption</a></li>
+            <li><a href="#s4">4. Internet relay (optional)</a></li>
+            <li><a href="#s5">5. Area channels (public)</a></li>
+            <li><a href="#s6">6. Location</a></li>
+            <li><a href="#s7">7. Android permissions</a></li>
+            <li><a href="#s8">8. In-app tips</a></li>
+            <li><a href="#s9">9. Age requirement</a></li>
+            <li><a href="#s10">10. Safety notice</a></li>
+            <li><a href="#s11">11. Changes</a></li>
+            <li><a href="#s12">12. Contact</a></li>
+          </ol>
+        </aside>
+
+        <article class="doc">
+          <h2 id="s1">1. Summary</h2>
+          <div class="summary">
+            Wasel is a peer-to-peer messenger that works over Bluetooth, and optionally over the local network, Wi-Fi Aware and the internet.
+            <ul>
+              <li><strong>No account.</strong> You give no email, phone number, name or password.</li>
+              <li><strong>No analytics, advertising or crash-reporting SDKs.</strong></li>
+              <li><strong>No Wasel-operated server.</strong> Khatt does not receive your messages, contacts, keys or location.</li>
+              <li>Messages, keys and contacts are stored only on your device.</li>
+              <li>Two optional features send data to third parties: the <strong>Internet relay</strong> and <strong>Area channels</strong> (sections 4 and 5). Both are off until you use them.</li>
+            </ul>
+          </div>
+
+          <h2 id="s2">2. Data stored on your device</h2>
+          <ul>
+            <li><strong>Identity keys:</strong> Curve25519 key pairs are generated locally on first launch and kept in the app's protected storage.</li>
+            <li><strong>Messages, voice notes, contacts, settings:</strong> stored locally in the app sandbox.</li>
+            <li><strong>Fresh start:</strong> <em>Settings &gt; Fresh start</em> permanently erases keys, conversations, contacts and settings from your device. It cannot recall anything already published to third-party relays (section 5).</li>
+          </ul>
+
+          <h2 id="s3">3. Bluetooth mesh and end-to-end encryption</h2>
+          <ul>
+            <li>Wasel talks directly device-to-device over Bluetooth Low Energy.</li>
+            <li>Private messages use the Noise Protocol Framework (<code>Noise_XX_25519_ChaChaPoly_BLAKE3</code>). Only the intended recipient can read them.</li>
+            <li>Intermediate devices relay sealed envelopes and cannot read their content.</li>
+            <li>Nearby devices can estimate how close you are from Bluetooth signal strength while discovery is on. Stealth mode stops your device from being shown.</li>
+            <li><strong>Nearby feed posts</strong> are visible to nearby people and the devices that relay them. Do not post anything you want to keep private.</li>
+          </ul>
+
+          <h2 id="s4">4. Optional internet relay (Nostr)</h2>
+          <p>Off by default. When you turn on <em>Settings &gt; Internet relay</em>:</p>
+          <ul>
+            <li>The app opens TLS WebSocket (<code>wss://</code>) connections to third-party public relays: <code>relay.damus.io</code>, <code>nos.lol</code> and <code>relay.primal.net</code>.</li>
+            <li>Relay operators can see your <strong>IP address</strong> and when you connect. Khatt does not operate these relays or control their logging.</li>
+            <li>Private mesh messages travel through relays as end-to-end encrypted envelopes that relays cannot read.</li>
+          </ul>
+          <p>The app can also exchange sealed envelopes with other Wasel devices on the same local network (UDP, local network only) and over Wi-Fi Aware; neither goes through the internet.</p>
+
+          <h2 id="s5">5. Area channels (public)</h2>
+          <p>Area channels need the internet relay and are <strong>public</strong>.</p>
+          <ul>
+            <li>When you join, the app publishes to the relays the <strong>geohash cell</strong> (1–6 characters; a cell chosen with "Use my location" is 5 characters, about 5&nbsp;km), your <strong>nickname</strong> and a <strong>cell-scoped public key</strong>. Anyone in the same cell can see them.</li>
+            <li>Everything you post in the channel is public to everyone who joins the cell.</li>
+            <li>Posts on third-party relays <strong>cannot be recalled or deleted</strong> by you or by Khatt.</li>
+            <li>You must accept the community rules (no illegal, hateful, harassing, sexual, violent or private content about others) before your first post or channel join. You can mute, hide or report any author. These actions hide content on your phone only, because Wasel has no server to moderate.</li>
+          </ul>
+
+          <h2 id="s6">6. Location</h2>
+          <ul>
+            <li><code>ACCESS_COARSE_LOCATION</code> is requested <strong>only when you tap "Use my location"</strong> in an Area channel.</li>
+            <li>The app takes one coarse fix, converts it to a 5-character geohash cell (about 5&nbsp;km) and discards the coordinates. Coordinates are never stored or sent. Only the cell is shared with the channel (section 5).</li>
+            <li>Bluetooth permissions are declared <code>neverForLocation</code>. On Android 11 and older the system requires a location permission (<code>ACCESS_FINE_LOCATION</code>, limited to Android 11 and older) for Bluetooth scanning; Wasel does not read your location for it.</li>
+          </ul>
+
+          <h2 id="s7">7. Android permissions</h2>
+          <table>
+            <thead><tr><th>Permission</th><th>Why</th></tr></thead>
+            <tbody>
+              <tr><td><code>BLUETOOTH_SCAN</code>, <code>BLUETOOTH_ADVERTISE</code>, <code>BLUETOOTH_CONNECT</code></td><td>Find and talk to nearby devices.</td></tr>
+              <tr><td><code>ACCESS_COARSE_LOCATION</code></td><td>Only on "Use my location" (section 6).</td></tr>
+              <tr><td><code>NEARBY_WIFI_DEVICES</code>, <code>ACCESS_WIFI_STATE</code>, <code>CHANGE_WIFI_STATE</code></td><td>Wi-Fi Aware links and local-network discovery. Declared <code>neverForLocation</code>.</td></tr>
+              <tr><td><code>INTERNET</code></td><td>Optional internet relay (section 4) and local-network links.</td></tr>
+              <tr><td><code>CAMERA</code></td><td>Scan a contact's QR code in person. Frames are processed in memory, never saved or sent.</td></tr>
+              <tr><td><code>RECORD_AUDIO</code></td><td>Record a voice note while you hold the microphone button. Voice notes are encrypted and sent only to the recipient.</td></tr>
+              <tr><td><code>POST_NOTIFICATIONS</code></td><td>Show the mesh status notification and incoming message alerts.</td></tr>
+              <tr><td><code>FOREGROUND_SERVICE</code>, <code>FOREGROUND_SERVICE_CONNECTED_DEVICE</code></td><td>Keep the mesh connected while the screen is off. A persistent notification is shown while it runs.</td></tr>
+            </tbody>
+          </table>
+
+          <h2 id="s8">8. In-app tips (Google Play Billing)</h2>
+          <p>Wasel has an optional tip jar. Payments are handled entirely by Google Play. Wasel does not receive or store card or bank details. Tips unlock nothing.</p>
+
+          <h2 id="s9">9. Age requirement</h2>
+          <p>Wasel is for people aged <strong>16 and over</strong>. It is not directed to children. Public area channels can show user-generated content.</p>
+
+          <h2 id="s10">10. Safety notice</h2>
+          <p>Wasel is not a substitute for emergency services. Do not rely on it to reach emergency help.</p>
+
+          <h2 id="s11">11. Changes</h2>
+          <p>Changes to this policy are published at this URL with a new effective date.</p>
+
+          <h2 id="s12">12. Contact</h2>
+          <p>Questions or requests about privacy: <a href="mailto:privacy@khatt.app">privacy@khatt.app</a></p>
+          <p>This website itself sets no cookies and uses no analytics or third-party requests. It stores only your light/dark theme choice in your browser, if you pick one.</p>
+        </article>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <span>© <span id="year">2026</span> Khatt. All rights reserved.</span>
+      <nav aria-label="Footer">
+        <a href="/">Khatt</a>
+        <a href="/wasel/">Wasel</a>
+        <a href="mailto:privacy@khatt.app">Contact</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="/assets/js/main.js" defer></script>
+</body>
+</html>

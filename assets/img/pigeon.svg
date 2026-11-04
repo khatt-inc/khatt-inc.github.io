@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 190" role="img" aria-label="A carrier pigeon holding an envelope">
+  <defs>
+    <linearGradient id="body" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#FFFFFF"/>
+      <stop offset="1" stop-color="#E7E1F8"/>
+    </linearGradient>
+    <linearGradient id="wing" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#9A63E0"/>
+      <stop offset="1" stop-color="#6E3FB8"/>
+    </linearGradient>
+  </defs>
+  <path d="M62 96 C30 78 14 84 6 104 C24 100 38 112 66 118 Z" fill="url(#wing)"/>
+  <ellipse cx="120" cy="104" rx="64" ry="50" fill="url(#body)"/>
+  <path d="M70 78 C98 46 142 52 150 88 C124 84 96 92 74 112 C62 104 62 90 70 78 Z" fill="url(#wing)"/>
+  <path d="M82 80 C100 62 124 62 138 76" fill="none" stroke="#fff" stroke-opacity=".45" stroke-width="4" stroke-linecap="round"/>
+  <circle cx="168" cy="64" r="31" fill="#F9F7FF"/>
+  <circle cx="158" cy="58" r="11" fill="#E4DEF7"/>
+  <circle cx="177" cy="57" r="4.5" fill="#25214A"/>
+  <circle cx="179" cy="55.5" r="1.4" fill="#fff"/>
+  <circle cx="161" cy="77" r="6.5" fill="#F7B6D2"/>
+  <path d="M195 58 L218 67 L195 75 Z" fill="#F6A33B"/>
+  <path d="M142 88 C156 100 176 100 190 88" fill="none" stroke="#3DB8A4" stroke-width="8" stroke-linecap="round"/>
+  <rect x="104" y="108" width="50" height="36" rx="6" fill="#F6C65B"/>
+  <path d="M104 112 L129 130 L154 112" fill="none" stroke="#D9962B" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+  <path d="M112 150 L108 172 M104 172 L116 172 M134 152 L136 174 M130 174 L142 174" fill="none" stroke="#F6A33B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
